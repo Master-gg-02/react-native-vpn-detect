@@ -41,12 +41,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/master_jacky/react-native-vpn-detect.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/master_jacky/react-native-vpn-detect/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/master_jacky/react-native-vpn-detect#readme",
+  "homepage": "",
   "publishConfig": {
     "access": "public"
   }
