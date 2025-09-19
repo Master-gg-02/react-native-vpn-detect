@@ -1,6 +1,6 @@
 {
   "name": "@master_jacky/react-native-vpn-detect",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Checks for VPN & Proxy - Community maintained backup of react-native-vpn-detect",
   "main": "index.js",
   "scripts": {
