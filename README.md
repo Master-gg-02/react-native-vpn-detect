@@ -1,14 +1,36 @@
 
-# react-native-vpn-detect
-<a href="https://www.buymeacoffee.com/kzlsn" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+# @master_jacky/react-native-vpn-detect
+
+> **⚠️ Important Notice**: This is a community-maintained backup of the original `react-native-vpn-detect` package. I am **NOT** the original author. This package is maintained for backup purposes with deep gratitude to the original author **leekuo**.
+
+**Original Author**: [leekuo](https://github.com/leekuo)  
+**Original Repository**: [react-native-vpn-detect](https://github.com/leekuo/react-native-vpn-detect)
+
+A React Native library for detecting VPN and Proxy connections.
 
 ## Getting started
 
-`$ npm install react-native-vpn-detect --save`
+```bash
+npm install @master_jacky/react-native-vpn-detect --save
+```
 
-### Mostly automatic installation
+or
 
-`$ react-native link react-native-vpn-detect`
+```bash
+yarn add @master_jacky/react-native-vpn-detect
+```
+
+### Mostly automatic installation (React Native < 0.60)
+
+`$ react-native link @master_jacky/react-native-vpn-detect`
+
+### Auto-linking (React Native >= 0.60)
+
+For React Native 0.60 and above, the package will be automatically linked. Just run:
+
+```bash
+cd ios && pod install
+```
 
 ### Manual installation
 
@@ -16,9 +38,9 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-vpn-detect` and add `RNNativeVpnDetect.xcodeproj`
+2. Go to `node_modules` ➜ `@master_jacky/react-native-vpn-detect` and add `RNNativeVpnDetect.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNNativeVpnDetect.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+4. Run your project (`Cmd+R`)
 
 #### Android
 
@@ -27,24 +49,52 @@
   - Add `new RNNativeVpnDetectPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-vpn-detect'
-  	project(':react-native-vpn-detect').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-vpn-detect/android')
+  	include ':master_jacky_react-native-vpn-detect'
+  	project(':master_jacky_react-native-vpn-detect').projectDir = new File(rootProject.projectDir, 	'../node_modules/@master_jacky/react-native-vpn-detect/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-vpn-detect')
+      implementation project(':master_jacky_react-native-vpn-detect')
   	```
 
 
 ## Usage
-```javascript
-* Import Library
-import Security from "react-native-vpn-detect";
 
-* Example Usage
+```javascript
+// Import Library
+import Security from "@master_jacky/react-native-vpn-detect";
+
+// Example Usage
 async function checkSecurity() {
-	let detectVPN = await Security.detectVPN().then(response => { return response });
-	let detectProxy = await Security.detectProxy().then(response => { return response });
+	try {
+		const detectVPN = await Security.detectVPN();
+		const detectProxy = await Security.detectProxy();
+		
+		console.log('VPN detected:', detectVPN);
+		console.log('Proxy detected:', detectProxy);
+	} catch (error) {
+		console.error('Error detecting VPN/Proxy:', error);
+	}
 }
+
 checkSecurity();
 ```
+
+## API
+
+### `detectVPN()`
+Returns a Promise that resolves to a boolean indicating whether a VPN connection is detected.
+
+### `detectProxy()`
+Returns a Promise that resolves to a boolean indicating whether a Proxy connection is detected.
+
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Credits
+
+**Original Author**: [leekuo](https://github.com/leekuo)  
+**Original Repository**: [react-native-vpn-detect](https://github.com/leekuo/react-native-vpn-detect)
+
+This package is maintained as a community backup with gratitude to the original author.
