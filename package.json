@@ -1,6 +1,6 @@
 {
   "name": "@master_jacky/react-native-vpn-detect",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Checks for VPN & Proxy - Community maintained backup of react-native-vpn-detect",
   "main": "index.js",
   "scripts": {
@@ -41,12 +41,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Master-gg-02/react-native-vpn-detect.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Master-gg-02/react-native-vpn-detect/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/Master-gg-02/react-native-vpn-detect#readme",
   "publishConfig": {
     "access": "public"
   }
