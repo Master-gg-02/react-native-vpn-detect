@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNNativeVpnDetect } = NativeModules;
+const { MasterJackyVpnDetect } = NativeModules;
 
-export default RNNativeVpnDetect;
+export default MasterJackyVpnDetect;

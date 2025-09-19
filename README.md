@@ -38,15 +38,15 @@ cd ios && pod install
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `@master_jacky/react-native-vpn-detect` and add `RNNativeVpnDetect.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNNativeVpnDetect.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+2. Go to `node_modules` ➜ `@master_jacky/react-native-vpn-detect` and add `MasterJackyVpnDetect.xcodeproj`
+3. In XCode, in the project navigator, select your project. Add `libMasterJackyVpnDetect.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNNativeVpnDetectPackage;` to the imports at the top of the file
-  - Add `new RNNativeVpnDetectPackage()` to the list returned by the `getPackages()` method
+  - Add `import com.masterjacky.vpndetect.MasterJackyVpnDetectPackage;` to the imports at the top of the file
+  - Add `new MasterJackyVpnDetectPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':master_jacky_react-native-vpn-detect'
