@@ -1,6 +1,6 @@
 {
-  "name": "@master_jacky/react-native-vpn-detect",
-  "version": "2.0.0",
+  "name": "master-jacky-react-native-vpn-detect",
+  "version": "2.1.0",
   "description": "Checks for VPN & Proxy - Community maintained backup of react-native-vpn-detect",
   "main": "index.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "url": "https://github.com/Master-gg-02/react-native-vpn-detect/issues"
   },
   "homepage": "https://github.com/Master-gg-02/react-native-vpn-detect#readme",
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "@master_jacky/react-native-vpn-detect": "2.0.0"
   }
 }

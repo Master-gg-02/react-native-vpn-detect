@@ -1,5 +1,5 @@
 
-# @master_jacky/react-native-vpn-detect
+# master-jacky-react-native-vpn-detect
 
 > **⚠️ Important Notice**: This is a community-maintained backup of the original `react-native-vpn-detect` package. I am **NOT** the original author. This package is maintained for backup purposes with deep gratitude to the original author **leekuo**.
 
@@ -11,18 +11,18 @@ A React Native library for detecting VPN and Proxy connections.
 ## Getting started
 
 ```bash
-npm install @master_jacky/react-native-vpn-detect --save
+npm install master-jacky-react-native-vpn-detect --save
 ```
 
 or
 
 ```bash
-yarn add @master_jacky/react-native-vpn-detect
+yarn add master-jacky-react-native-vpn-detect
 ```
 
 ### Mostly automatic installation (React Native < 0.60)
 
-`$ react-native link @master_jacky/react-native-vpn-detect`
+`$ react-native link master-jacky-react-native-vpn-detect`
 
 ### Auto-linking (React Native >= 0.60)
 
@@ -38,7 +38,7 @@ cd ios && pod install
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `@master_jacky/react-native-vpn-detect` and add `MasterJackyReactNativeVpnDetect.xcodeproj`
+2. Go to `node_modules` ➜ `master-jacky-react-native-vpn-detect` and add `MasterJackyReactNativeVpnDetect.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libMasterJackyReactNativeVpnDetect.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
@@ -50,7 +50,7 @@ cd ios && pod install
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':master-jacky-react-native-vpn-detect'
-  	project(':master-jacky-react-native-vpn-detect').projectDir = new File(rootProject.projectDir, 	'../node_modules/@master_jacky/react-native-vpn-detect/android')
+  	project(':master-jacky-react-native-vpn-detect').projectDir = new File(rootProject.projectDir, 	'../node_modules/master-jacky-react-native-vpn-detect/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
@@ -62,7 +62,7 @@ cd ios && pod install
 
 ```javascript
 // Import Library
-import Security from "@master_jacky/react-native-vpn-detect";
+import Security from "master-jacky-react-native-vpn-detect";
 
 // Example Usage
 async function checkSecurity() {
