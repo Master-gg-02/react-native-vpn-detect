@@ -1,4 +1,4 @@
-package com.masterjacky.vpndetect;
+package com.masterjacky.reactnativevpndetect;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,10 +10,10 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-public class MasterJackyVpnDetectPackage implements ReactPackage {
+public class MasterJackyReactNativeVpnDetectPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new MasterJackyVpnDetectModule(reactContext));
+      return Arrays.<NativeModule>asList(new MasterJackyReactNativeVpnDetectModule(reactContext));
     }
 
     // Deprecated from RN 0.47

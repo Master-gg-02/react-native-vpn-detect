@@ -4,6 +4,6 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface MasterJackyVpnDetect : NSObject <RCTBridgeModule>
+@interface MasterJackyReactNativeVpnDetect : NSObject <RCTBridgeModule>
 
 @end

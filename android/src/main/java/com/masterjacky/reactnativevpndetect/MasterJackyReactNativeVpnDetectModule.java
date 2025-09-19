@@ -1,4 +1,4 @@
-package com.masterjacky.vpndetect;
+package com.masterjacky.reactnativevpndetect;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -10,18 +10,18 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
 
-public class MasterJackyVpnDetectModule extends ReactContextBaseJavaModule {
+public class MasterJackyReactNativeVpnDetectModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
 
-  public MasterJackyVpnDetectModule(ReactApplicationContext reactContext) {
+  public MasterJackyReactNativeVpnDetectModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
   }
 
   @Override
   public String getName() {
-    return "MasterJackyVpnDetect";
+    return "MasterJackyReactNativeVpnDetect";
   }
 
   @ReactMethod

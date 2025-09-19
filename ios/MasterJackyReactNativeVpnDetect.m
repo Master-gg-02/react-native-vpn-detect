@@ -1,6 +1,6 @@
-#import "MasterJackyVpnDetect.h"
+#import "MasterJackyReactNativeVpnDetect.h"
 
-@implementation MasterJackyVpnDetect
+@implementation MasterJackyReactNativeVpnDetect
 
 - (dispatch_queue_t)methodQueue
 {
